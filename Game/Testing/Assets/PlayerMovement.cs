@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 PreviousPosition = new Vector2(0.0f, 0.0f);
 
+    public Transform Sword;
+
     // Start is called before the first frame updat
     void Start()
     {
@@ -29,6 +31,24 @@ public class PlayerMovement : MonoBehaviour
         var currentspd = movespeed * Time.deltaTime * (2);
 
         transform.Translate(horizontalInput * currentspd,  verticalInput * currentspd, 0);
+
+        if (Input.GetAxisRaw("Fire1") > 0)
+        {
+            Sword = this.gameObject.transform.GetChild(0);
+            float rotAmount =+ 36f;
+            float curRot = transform.localRotation.eulerAngles.z;
+            Sword.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, curRot + rotAmount));
+        }
+        else if (Input.GetAxisRaw("Fire1") == 0)
+        {
+            Sword = this.gameObject.transform.GetChild(0);
+            float rotAmount = 0;
+            float curRot = transform.localRotation.eulerAngles.z;
+            Sword.transform.localRotation = Quaternion.identity;
+        }
+
+
+
     }
 
     
