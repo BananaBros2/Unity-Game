@@ -334,6 +334,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 6989460526638813140, guid: 37191500697ad3546b35c682618152cf, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 7343960928254040092, guid: 37191500697ad3546b35c682618152cf, type: 3}
       propertyPath: openingDirection
       value: 4

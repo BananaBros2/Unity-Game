@@ -32,7 +32,7 @@ Transform:
   - {fileID: 4786322896009892379}
   - {fileID: 4786322895983743251}
   - {fileID: 3480718496054388324}
-  - {fileID: 5738634677477042417}
+  - {fileID: 7476509750591833248}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2263,7 +2263,7 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!1001 &4198307199705968765
+--- !u!1001 &1306393483844836396
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2320,8 +2320,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db13d886fd520d94098834172e501153, type: 3}
---- !u!4 &5738634677477042417 stripped
+--- !u!4 &7476509750591833248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8494030730566932620, guid: db13d886fd520d94098834172e501153, type: 3}
-  m_PrefabInstance: {fileID: 4198307199705968765}
+  m_PrefabInstance: {fileID: 1306393483844836396}
   m_PrefabAsset: {fileID: 0}

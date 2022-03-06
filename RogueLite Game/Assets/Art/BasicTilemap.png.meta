@@ -121,10 +121,10 @@ TextureImporter:
     second: Chest_Open
   - first:
       213: 3116651656138869839
-    second: BasicTilemap_41
+    second: OffScreen
   - first:
       213: 2249777533181385607
-    second: BasicTilemap_42
+    second: Rock_1
   - first:
       213: -8061645542454134776
     second: Left_TR_BR
@@ -175,16 +175,19 @@ TextureImporter:
     second: Corner_TL
   - first:
       213: -7309238765475399880
-    second: BasicTilemap_59
+    second: Rock_2
   - first:
       213: -1021452102831326573
-    second: BasicTilemap_60
+    second: Rock_3
   - first:
       213: 8512906804499454194
     second: Right_TL
   - first:
       213: -6585160544412281515
     second: End_Right
+  - first:
+      213: 5580703467732776910
+    second: Rock_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1437,7 +1440,7 @@ TextureImporter:
         width: 24
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1458,7 +1461,7 @@ TextureImporter:
         width: 24
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1466,6 +1469,111 @@ TextureImporter:
       bones: []
       spriteID: f1f5c40986398bd50800000000000000
       internalID: 6753309718548864799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OffScreen
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c4ac42b22904b20800000000000000
+      internalID: 3116651656138869839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b5ee02fb0d83f10800000000000000
+      internalID: 2249777533181385607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837f25d911e509a90800000000000000
+      internalID: -7309238765475399880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ab9af69b213d1f0800000000000000
+      internalID: -1021452102831326573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rock_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7b00f6c34a27d40800000000000000
+      internalID: 5580703467732776910
       vertices: []
       indices: 
       edges: []

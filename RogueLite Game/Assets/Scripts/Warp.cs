@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class Warp : Collidable
 {
+
+    public GameObject Player;
     public float XTeleport = 0;
     public float YTeleport = 0;
 
-    public GameObject Player;
-
     protected override void OnCollide(Collider2D coll)
     {
+
+        Player = GameObject.FindGameObjectWithTag("Player");
         if (coll.name == "Player")
         {
-            Debug.Log(transform.position.x + XTeleport);
             Player.transform.position = new Vector3((transform.position.x + XTeleport), (transform.position.y + YTeleport), 0);
-            Debug.Log(transform.position.y);
+
         }
     }
+
 }
