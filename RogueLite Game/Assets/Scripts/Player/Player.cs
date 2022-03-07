@@ -50,10 +50,6 @@ public class Player : MonoBehaviour
         }
 
 
-
-
-
-        
     }
 
 

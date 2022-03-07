@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 343545184077745775, guid: 680c75733b16bca47b8fac1ad3e6de90, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 343545184077745775, guid: 680c75733b16bca47b8fac1ad3e6de90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,16 +334,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f596b434365f7c14aac50be43603e1bb, type: 3}
---- !u!1001 &1397133717
+--- !u!1001 &1609456104
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5170302364155809089, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 7463434138605248361, guid: e4b90dc1bfd6945428fe52ed4ef083ed, type: 3}
     - target: {fileID: 8046276670779859704, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8046276670779859704, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
       propertyPath: m_LocalPosition.x
