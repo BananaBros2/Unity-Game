@@ -5,31 +5,28 @@ using UnityEngine.UI;
 
 public class Chests : Collectable
 {
-
+    public int CoinAmount = 1;
     public Sprite ChestOpen;
-    protected bool collected;
     private Text CoinText;
 
-    void Start()
+    public Gameplay gameplay;
+
+    private void Start()
     {
-        GetComponentInParent<UI>().CoinCount = 10;
+        gameplay = FindObjectOfType<Gameplay>();
+        Debug.Log(gameplay.CoinCount);
     }
-
-
-
-
-
 
     protected override void OnCollect()
     {
-        Debug.Log("Grant" + CoinCount);
         if (!collected)
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = ChestOpen;
-            Debug.Log("Grant" + CoinCount);
+            gameplay.CoinCount += CoinAmount;
+            Debug.Log("Grant 5");
             CoinText = GameObject.Find("Canvas/Coins").GetComponent<Text>();
-            CoinText.text = "Test";
+            CoinText.text = (gameplay.CoinCount.ToString());
         }
     }
 }
