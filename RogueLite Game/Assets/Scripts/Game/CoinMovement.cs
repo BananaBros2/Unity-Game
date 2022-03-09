@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletScript : Collidable
+public class CoinMovement : Collidable
 {
     public float maxSpeed = 10f;
 
@@ -17,6 +17,7 @@ public class BulletScript : Collidable
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.tag);
         if (other.CompareTag("HardCollision"))
         {
             Destroy(gameObject);

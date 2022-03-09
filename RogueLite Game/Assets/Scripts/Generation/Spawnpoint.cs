@@ -10,7 +10,7 @@ public class Spawnpoint : MonoBehaviour
     private int rand;
     private bool spawned = false;
 
-    void Start()
+    void Awake()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         Invoke("Spawn", 0.04f);

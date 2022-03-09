@@ -6,27 +6,27 @@ using UnityEngine.UI;
 public class Chests : Collectable
 {
     public int CoinAmount = 1;
+
     public Sprite ChestOpen;
     private Text CoinText;
+    private int rand;
 
+    public GameObject coinPrefab;
     public Gameplay gameplay;
-
-    private void Start()
-    {
-        gameplay = FindObjectOfType<Gameplay>();
-        Debug.Log(gameplay.CoinCount);
-    }
 
     protected override void OnCollect()
     {
         if (!collected)
         {
+            gameplay = FindObjectOfType<Gameplay>();
             collected = true;
             GetComponent<SpriteRenderer>().sprite = ChestOpen;
-            gameplay.CoinCount += CoinAmount;
-            Debug.Log("Grant 5");
-            CoinText = GameObject.Find("Canvas/Coins").GetComponent<Text>();
-            CoinText.text = (gameplay.CoinCount.ToString());
+
+            for (int i = 0; i < CoinAmount; i++)
+            {
+                rand = Random.Range(0, 360);
+                Instantiate(coinPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, rand)));
+            }
         }
     }
 }
