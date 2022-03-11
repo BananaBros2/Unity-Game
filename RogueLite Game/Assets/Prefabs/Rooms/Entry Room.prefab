@@ -136,9 +136,9 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  Player: {fileID: 0}
-  XTeleport: 6.5
-  YTeleport: 0
+  player: {fileID: 0}
+  xTeleport: 6.5
+  yTeleport: 0
 --- !u!1 &197582985458799315
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  Player: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &197582986147861948
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,9 +360,9 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  Player: {fileID: 0}
-  XTeleport: -6.5
-  YTeleport: 0
+  player: {fileID: 8046276670779859706, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
+  xTeleport: -6
+  yTeleport: 0
 --- !u!1 &197582986299268632
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,9 +499,9 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  Player: {fileID: 0}
-  XTeleport: 0
-  YTeleport: -2.5
+  player: {fileID: 0}
+  xTeleport: 0
+  yTeleport: -2
 --- !u!1 &197582986686984988
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,9 +638,9 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  Player: {fileID: 0}
-  XTeleport: 0
-  YTeleport: 2.5
+  player: {fileID: 0}
+  xTeleport: 0
+  yTeleport: 2
 --- !u!1 &434032656338470744
 GameObject:
   m_ObjectHideFlags: 0

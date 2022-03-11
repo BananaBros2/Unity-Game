@@ -6,22 +6,22 @@ using UnityEngine;
 
 public class InventoryObject : ScriptableObject
 {
-    public List<InventorySlot> Container = new List<InventorySlot>();
+    public List<InventorySlot> container = new List<InventorySlot>();
     public void AddItem(ItemObject _item, int _amount)
     {
         bool hasItem = false;
-        for (int i = 0; i < Container.Count; i++)
+        for (int i = 0; i < container.Count; i++)
         {
-            if(Container[i].item == _item)
+            if(container[i].item == _item)
             {
-                Container[i].AddAmount(_amount);
+                container[i].AddAmount(_amount);
                 hasItem = true;
                 break;
             }
         }
         if (!hasItem)
         {
-            Container.Add(new InventorySlot(_item, _amount));
+            container.Add(new InventorySlot(_item, _amount));
         }
     }
 }

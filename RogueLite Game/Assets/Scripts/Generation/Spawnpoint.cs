@@ -52,15 +52,7 @@ public class Spawnpoint : MonoBehaviour
         {
             if (other.GetComponent<Spawnpoint>().spawned == false && spawned == false)
             {
-                try
-                {
-                    Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
-                }
-                catch
-                {
-                    Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
-
-                }
+                Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
             spawned = true;

@@ -5,17 +5,17 @@ using UnityEngine;
 public class Warp : Collidable
 {
 
-    public GameObject Player;
-    public float XTeleport = 0;
-    public float YTeleport = 0;
+    public GameObject player;
+    public float xTeleport = 0;
+    public float yTeleport = 0;
 
     protected override void OnCollide(Collider2D coll)
     {
 
-        Player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         if (coll.name == "Player")
         {
-            Player.transform.position = new Vector3((transform.position.x + XTeleport), (transform.position.y + YTeleport), 0);
+            player.transform.position = new Vector3((transform.position.x + xTeleport), (transform.position.y + yTeleport), 0);
 
         }
     }

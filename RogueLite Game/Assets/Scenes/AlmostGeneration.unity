@@ -472,6 +472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 149661481, guid: 680c75733b16bca47b8fac1ad3e6de90, type: 3}
+      propertyPath: speed
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 343545184077745775, guid: 680c75733b16bca47b8fac1ad3e6de90, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -760,6 +764,10 @@ PrefabInstance:
       propertyPath: CoinAmount
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 7581458574770428799, guid: 7c71b5b992b690c43b25a92aa2136c31, type: 3}
+      propertyPath: coinAmount
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c71b5b992b690c43b25a92aa2136c31, type: 3}
 --- !u!1001 &1383696430
@@ -918,6 +926,10 @@ PrefabInstance:
       propertyPath: CoinAmount
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7581458574770428799, guid: 7c71b5b992b690c43b25a92aa2136c31, type: 3}
+      propertyPath: coinAmount
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c71b5b992b690c43b25a92aa2136c31, type: 3}
 --- !u!1001 &1609456104
@@ -986,6 +998,10 @@ PrefabInstance:
     - target: {fileID: 8046276670779859706, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046276670779859711, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8046276670779859711, guid: bd93a6934f1103041b8a77bcd0c13e34, type: 3}
       propertyPath: inventory
@@ -1250,8 +1266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64487fc7ae7c27b49adaf603141c590a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinCount: 0
-  Score: 0
+  coinCount: 0
+  score: 0
 --- !u!4 &2146621066
 Transform:
   m_ObjectHideFlags: 0

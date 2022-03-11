@@ -124,8 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c424dccdf8430a4187693fb077fbc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
-  inventory: {fileID: 0}
+  speed: 2
+  gameplay: {fileID: 0}
+  inventory: {fileID: 11400000, guid: cd65b4903109358488e399fa4312a9ed, type: 2}
 --- !u!114 &5170302364155809089
 MonoBehaviour:
   m_ObjectHideFlags: 0

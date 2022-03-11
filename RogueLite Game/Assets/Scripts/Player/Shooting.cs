@@ -9,55 +9,55 @@ public class Shooting : MonoBehaviour
     public float fireDelay = 0.4f;
     float cooldownTimer = 0;
 
-    private float RotationX;
-    private float RotationY;
+    private float rotationX;
+    private float rotationY;
 
     void Update()
     {
         cooldownTimer -= Time.deltaTime;
 
-        RotationX = 0;
-        RotationY = 0;
+        rotationX = 0;
+        rotationY = 0;
 
 
         if (Input.GetAxisRaw("Horizontal Shoot") > 0)
         {
-            RotationX = 360;
+            rotationX = 360;
         }
         else if (Input.GetAxisRaw("Horizontal Shoot") < 0)
         {
-            RotationX = 180;
+            rotationX = 180;
         }
 
 
 
         if (Input.GetAxisRaw("Vertical Shoot") > 0)
         {
-            RotationY = 90;
-            if (RotationX == 360)
+            rotationY = 90;
+            if (rotationX == 360)
             {
-                RotationX = 0.0001f;
+                rotationX = 0.0001f;
             }
         }
         else if (Input.GetAxisRaw("Vertical Shoot") < 0)
         {
-            RotationY = 270;
+            rotationY = 270;
         }
 
-        if(RotationY == 0)
+        if(rotationY == 0)
         {
-            RotationY = RotationX;
+            rotationY = rotationX;
         }
 
-        if (RotationX == 0)
+        if (rotationX == 0)
         {
-            RotationX = RotationY;
+            rotationX = rotationY;
         }
 
 
         if ((Input.GetButton("Horizontal Shoot") || Input.GetButton("Vertical Shoot")) && cooldownTimer <= 0)
         {
-            Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, ((RotationY + RotationX) / 2))));
+            Instantiate(bulletPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, ((rotationY + rotationX) / 2))));
             cooldownTimer = fireDelay;
         }
     }

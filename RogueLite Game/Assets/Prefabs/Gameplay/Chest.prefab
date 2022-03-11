@@ -136,7 +136,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  CoinAmount: 1
-  ChestOpen: {fileID: 6753309718548864799, guid: fa110cf325c7b49478e734ee633af1f3, type: 3}
+  coinAmount: 1
+  chestOpen: {fileID: 6753309718548864799, guid: fa110cf325c7b49478e734ee633af1f3, type: 3}
   coinPrefab: {fileID: 4047055350921968988, guid: 6e4d556546787754283c6f16497309cb, type: 3}
   gameplay: {fileID: 0}

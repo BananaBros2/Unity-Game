@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Coin : Collectable
 {
-    public float pickupDelay = 5;
+    public float pickupDelay = 3;
 
-    public int CoinAmount = 1;
-    private Text CoinText;
-    private Text ScoreText;
+    public int coinAmount = 1;
+    private Text coinText;
+    private Text scoreText;
 
 
     public Gameplay gameplay;
@@ -25,13 +25,13 @@ public class Coin : Collectable
         if (!collected && pickupDelay <= 0)
         {
             gameplay = FindObjectOfType<Gameplay>();
-            gameplay.CoinCount += CoinAmount;
-            CoinText = GameObject.Find("Canvas/Coins").GetComponent<Text>();
-            CoinText.text = ("- " + gameplay.CoinCount.ToString());
+            gameplay.coinCount += coinAmount;
+            coinText = GameObject.Find("Canvas/Coins").GetComponent<Text>();
+            coinText.text = ("- " + gameplay.coinCount.ToString());
 
-            gameplay.Score += 1;
-            ScoreText = GameObject.Find("Canvas/Score").GetComponent<Text>();
-            ScoreText.text = ("Score\n" + gameplay.Score.ToString());
+            gameplay.score += 1;
+            scoreText = GameObject.Find("Canvas/Score").GetComponent<Text>();
+            scoreText.text = ("Score\n" + gameplay.score.ToString());
 
             Destroy(gameObject);
         }

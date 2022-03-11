@@ -7,7 +7,7 @@ public class CameraGrid : Collidable
 
     public static CameraGrid instance;
 
-    public float Speed;
+    public float speed;
     public Transform target;
 
     private void Awake()
@@ -20,7 +20,7 @@ public class CameraGrid : Collidable
     {
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x+0.001f, target.position.y, -10), Speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x+0.001f, target.position.y, -10), speed * Time.deltaTime);
         }
     }
 

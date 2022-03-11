@@ -5,7 +5,7 @@ using UnityEngine;
 public class RoomCamera : Collidable
 {
 
-    public GameObject Player;
+    public GameObject player;
 
     protected override void OnCollide(Collider2D coll)
     {
