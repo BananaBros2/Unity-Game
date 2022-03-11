@@ -24,7 +24,7 @@ public class Chests : Collectable
 
             for (int i = 0; i < CoinAmount; i++)
             {
-                rand = Random.Range(0, 360);
+                rand = Random.Range(360 / CoinAmount * (2*i-1), 360 / CoinAmount * 2 * i);
                 Instantiate(coinPrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, rand)));
             }
         }

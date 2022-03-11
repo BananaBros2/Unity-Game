@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19da09ee3195412499ae0fc4f57c73d2, type: 3}
+  m_Name: SnipeBook
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3892038982390599375, guid: 2bf98fac3642d4f4f88872e2bfd01c6e, type: 3}
+  type: 0
+  description: Projectile damage, speed and range up, but decreased projectile size.
+  healthCha: 0
+  speedCha: 0
+  bulletDamageCha: 0.2
+  bulletSpeedCha: 0.2
+  bulletSizeCha: -0.2
+  bulletRangeCha: 0.2
