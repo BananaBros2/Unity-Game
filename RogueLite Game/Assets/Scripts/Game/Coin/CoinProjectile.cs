@@ -10,7 +10,7 @@ public class CoinProjectile : MonoBehaviour
 
     private void Start()
     {
-        rand = Random.Range(0.05f, 0.4f);
+        rand = Random.Range(0.1f, 1f);
     }
 
     void Update()

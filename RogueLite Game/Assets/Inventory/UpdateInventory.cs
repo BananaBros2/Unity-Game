@@ -23,8 +23,7 @@ public class UpdateInventory : MonoBehaviour
         for (int i = 0; i < inventory.Container.Count; i++)
         {
             var obj = Instantiate(inventory.Container[i].item.prefab, Vector3.zero, Quaternion.identity, transform);
-            obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
-            Debug.Log(inventory.Container[i].item.prefab);
+            obj.GetComponentInChildren<TextMeshProUGUI>().text = " ";
             ItemsDisplayed.Add(inventory.Container[i], obj);
         }
     }
@@ -35,13 +34,20 @@ public class UpdateInventory : MonoBehaviour
         {
             if (ItemsDisplayed.ContainsKey(inventory.Container[i]))
             {
-                ItemsDisplayed[inventory.Container[i]].GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
+                if (inventory.Container[i].amount > 1)
+                {
+                    ItemsDisplayed[inventory.Container[i]].GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
+                }
+                else
+                {
+                    ItemsDisplayed[inventory.Container[i]].GetComponentInChildren<TextMeshProUGUI>().text = " ";
+
+                }
             }
             else
             {
                 var obj = Instantiate(inventory.Container[i].item.prefab, Vector3.zero, Quaternion.identity, transform);
-                obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString("n0");
-                Debug.Log(inventory.Container[i].item.prefab);
+                obj.GetComponentInChildren<TextMeshProUGUI>().text = inventory.Container[i].amount.ToString(" ");
                 ItemsDisplayed.Add(inventory.Container[i], obj);
             }
         }

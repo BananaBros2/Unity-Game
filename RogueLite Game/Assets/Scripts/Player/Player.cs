@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Player : MonoBehaviour
 
     private RaycastHit2D hit;
 
+    public Gameplay gameplay;
+    private Text ScoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -59,7 +62,11 @@ public class Player : MonoBehaviour
         var item = collision.GetComponent<Item>();
         if(item)
         {
-            Debug.Log(item.item);
+            gameplay = FindObjectOfType<Gameplay>();
+            gameplay.Score += 10;
+            ScoreText = GameObject.Find("Canvas/Score").GetComponent<Text>();
+            ScoreText.text = ("Score\n" + gameplay.Score.ToString());
+
             inventory.AddItem(item.item, 1);
             Destroy(collision.gameObject);
         }

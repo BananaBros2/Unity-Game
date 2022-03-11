@@ -9,6 +9,8 @@ public class Coin : Collectable
 
     public int CoinAmount = 1;
     private Text CoinText;
+    private Text ScoreText;
+
 
     public Gameplay gameplay;
 
@@ -25,7 +27,12 @@ public class Coin : Collectable
             gameplay = FindObjectOfType<Gameplay>();
             gameplay.CoinCount += CoinAmount;
             CoinText = GameObject.Find("Canvas/Coins").GetComponent<Text>();
-            CoinText.text = ("C-" + gameplay.CoinCount.ToString());
+            CoinText.text = ("- " + gameplay.CoinCount.ToString());
+
+            gameplay.Score += 1;
+            ScoreText = GameObject.Find("Canvas/Score").GetComponent<Text>();
+            ScoreText.text = ("Score\n" + gameplay.Score.ToString());
+
             Destroy(gameObject);
         }
     }
