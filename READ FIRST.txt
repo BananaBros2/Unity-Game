@@ -1,0 +1,4 @@
+Making a build of the game will revert the aspect ratio
+and will break collisions
+
+The base aspect ratio is 41:20 with the ASPECT RATIO type

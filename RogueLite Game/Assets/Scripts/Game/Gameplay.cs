@@ -6,4 +6,7 @@ public class Gameplay : MonoBehaviour       // The Gameplay class will use featu
 {
     public int coinCount;       // Starts a variable for the player's coin count that will be stored here
     public int score;       // Starts a variable for the player's coin count that will be stored here, the default value is 0
+
+    public int targetFrameRate = 70;
+
 }

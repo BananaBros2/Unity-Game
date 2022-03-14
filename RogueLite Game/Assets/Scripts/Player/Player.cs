@@ -12,21 +12,18 @@ public class Player : MonoBehaviour         // The player class will use feature
     private RaycastHit2D hit;       // Used to access information returned by a raycast when hitting objects
     public Gameplay gameplay;       // A variable which will be used to inherit features used in the 'Gameplay' script
     private Text scoreText;         // Will be used to add and update the score
-
+    float x;
+    float y;
 
     void Start()        // Start is called before the first frame update
     {
         boxCollider = GetComponent<BoxCollider2D>();        // Finds the BoxCollider2D component the owner has and assigns it to 'boxCollider'
     }
 
-
     void Update()       // Update is called once per frame
     {
-
-
-        float x = Input.GetAxisRaw("Horizontal");       // Sets the new variable 'x' based on the player's input.
-        float y = Input.GetAxisRaw("Vertical");         // Depending what the player is pressing, it could be 1, 0, or -1 (keyboard)
-
+        x = Input.GetAxisRaw("Horizontal");       // Sets the new variable 'x' based on the player's input.
+        y = Input.GetAxisRaw("Vertical");         // Depending what the player is pressing, it could be 1, 0, or -1 (keyboard)
 
         movementDelta = new Vector3(x * speed, y * speed, 0);       // Sets movementDelta as the player's input multiplied by the speed variable
 
