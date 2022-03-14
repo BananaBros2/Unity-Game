@@ -137,8 +137,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  pickupDelay: 1
-  CoinAmount: 1
+  pickupDelay: 0.75
+  coinAmount: 1
   gameplay: {fileID: 0}
 --- !u!114 &1148155708925456485
 MonoBehaviour:
@@ -152,4 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b24add6aefdc57429e7a0167444fbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  coinSpeed: 10

@@ -137,5 +137,5 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  Speed: 50
+  scrollSpeed: 100
   target: {fileID: 0}

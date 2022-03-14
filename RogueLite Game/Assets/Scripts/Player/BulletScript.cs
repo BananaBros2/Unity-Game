@@ -1,25 +1,22 @@
-using System.Collections;
+using System.Collections;       // Namespace references that the script can use
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletScript : Collidable
+public class BulletScript : Collidable      // The BulletScript class will use features from the Collidable class
 {
-    public float maxSpeed = 10f;
+    public float bulletSpeed = 10f;         // Sets a float variable for 'bulletSpeed' to a default value of 10 which can be changed in the inspector
 
-    void Update()
+    protected virtual void Update()       // Update is called once per frame
     {
-        Vector3 pos = transform.position;
-        Vector3 velocity = new Vector3(maxSpeed * Time.deltaTime, 0f, 0f);
-        pos += transform.rotation * velocity;
-        transform.position = pos;
+        Vector3 velocity = new Vector3(bulletSpeed * Time.deltaTime, 0f, 0f);       // Sets a 'velocity' variable X value to the speed times delta time
+        transform.position += transform.rotation * velocity;        // Adds the rotation of the object multiplied by the velocity to the position
     }
 
-
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)         // Starts when the collider2D overlaps with another collider2D which is set to 'other'
     {
-        if (other.CompareTag("HardCollision"))
+        if (other.CompareTag("HardCollision"))      // Checks if the entered collider has the tag 'HardCollision'
         {
-            Destroy(gameObject);
+            Destroy(gameObject);        // Removes the game object that this script is attached to
         }
     }
 }

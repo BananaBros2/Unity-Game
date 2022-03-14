@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29fce0522f251047a6c815ef30e85c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  fireDelay: 0.4
+  bulletPrefab: {fileID: 7463434138605248361, guid: e4b90dc1bfd6945428fe52ed4ef083ed, type: 3}
+  fireDelay: 1
 --- !u!50 &4420751404634168172
 Rigidbody2D:
   serializedVersion: 4
